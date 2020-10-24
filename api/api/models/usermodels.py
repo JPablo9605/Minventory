@@ -19,7 +19,7 @@ class User(models.Model):
     last_name = models.TextField(max_length=50, validators=[OnlyLetters])
     document_number = models.IntegerField(unique=True)
     phone = models.IntegerField(unique=True)
-    email = models.EmailField(max_length=200,unique=True)
+    email = models.EmailField(max_length=200, unique=True)
     password = models.TextField(max_length=250)
     address = models.TextField(max_length=50)
     gender = models.CharField(max_length=19, choices=TYPE_GENDER)
